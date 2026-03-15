@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    color: white;
+    background: linear-gradient(135deg, #5865F2, #8A2BE2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho-img{
+    height: 60px;
+    margin:10px;
+}
+
+.menu-nav{
+    display: flex;
+    gap: 80px;
+    margin-right: 50px;
+    font-family: 'sarala', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+
+.link-nav{
+    color: white;
+
+}
+
+.cabecalho{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    align-items: center;
+    gap: 300px;
+}
+
+main{
+    border-top: 0.4px solid white;
+}
+
+.conteudo-prim{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titulo-prim{
+    font-family: 'Righteous' cursive;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.texto-prim{
+    font-family: 'sarala' sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.conj-texto-prim{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.botao-prim{
+    background-color: whitesmoke;
+    border:none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor:pointer;
+    width: 200px;
+    font-family: 'sarala' sans-serif;
+    font-weight: 400;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.botao-prim:hover{
+    background-color: rgba(236,214,196,0.53);
+    transition-duration: 0.4s;
+}
+
+.botao-prim span{
+    background-image: linear-gradient(135deg, #5865F2, #8A2BE2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.bot-img{
+    height: 350px;
+}
+
+.conteudo-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    margin-bottom: 15px;
+    margin-top:40px;
+}
+
+.titulo-sec{
+    border-top: 0.4px solid whitesmoke;
+    padding-top: 30px;
+    font-family: 'Righteous' cursive;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.texto-sec{
+    font-family: 'sarala' sans-serif;
+    font-weight: 400;
+    font-size: 15PX;  
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 0.4px solid white;
+}
+
+.clique{
+    color: white;
+}
