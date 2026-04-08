@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Perguntas</title>
+        <meta name="description" content="Sistema de perguntas">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Perguntas sobres programação!</h1>
+            <p>Meu sistema de perguntas e respostas a respeito da programação!</p>
+        </header>
+        <main>
+            <!-- introdução: Marcação de texto -->
+            <section>
+                <h2>Linguagens que serão usadas:</h2>               
+                <p><strong><em>Rust</em><br>
+                <abbr title="Cobrinha">Python</abbr>
+                </strong><br>html <br>SQL</p>
+            </section> 
+            <!-- Priemeira pergunta: Escolha -->
+            <section>
+                <h2>Pergunta 1: Qual linguaguem usada nesse site?</h2>
+                <form>
+                    <input type="radio" value="Python" id="p1a" name="pergunta1">
+                    <label for="p1a">Python</label><br>
+                    <input type="radio" value="Html" id="p1b" name="pergunta1">
+                    <label for="p1b">Html</label><br>
+                    <input type="radio" value="Rust" id="p1c" name="pergunta1">
+                    <label for="p1c">Rust</label><br>       
+                    <input type="radio" value="SQL" id="p1d" name="pergunta1">     
+                    <label for="p1d">SQL</label>       
+                </form>
+            </section>
+            <!-- Segunda pergunta: Receber texto -->
+            <section>
+                <h2>Pergunta 2: Qual abreviação de HTML?</h2>
+                <form>
+                <input type="text" id="p2" name="pergunta2" placeholder="Digite a resposta">
+                </form>
+            </section>
+            <!-- Terceira pergunta: Receber senha-->
+            <section>
+                <form>
+                    <h2>Pergunta 3: Qual a senha correta?</h2>
+                    <input type="password" id="p3" name="pergunta 3" placeholder="Digite a senha">
+                </form>
+            </section>
+             <!-- Quarta pergunta: Receber data -->
+            <section>
+                <form>
+                    <h2>Pergunta 4: Em que dia estamos?</h2>
+                    <input type="date" id="p4" name="pergunta4">
+                </form>
+            </section>
+            <!-- Quinta pergunta: Selecionar checkbox -->
+            <section>
+                <h2>Pergunta 5: Quais dessas linguagens são para front-end?</h2>
+                <form class="box">
+                    <input class="b1" type="checkbox" id="p5a" name="pergunta5a" value="Html">
+                    <label class="b1" for="p5a">Html</label>
+                    <input class="b2" type="checkbox" id="p5b" name="pergunta5b" value="JavaScript">
+                    <label class="b2" for="p5b">JavaScript</label>
+                    <input class="b3" type="checkbox" id="p5c" name="pergunta5c" value="C#">
+                    <label class="b3" for="p5c">C#</label>
+
+                </form>
+            </section>
+            <!-- Sexta pergunta: Enviar arquivos -->
+            <section>
+                <form>
+                    <h2>Pergunta 6: Faça upload de um arquivo.</h2>
+                    <input type="file" id="p6" name="pergunta6">
+                </form>
+            </section>
+            <!-- Setima pergunta: Seleção em dropdown-->
+            <section>
+                <form>
+                    <h2>Pergunta 7: Selecione a linguagem usada em banco de dados.</h2>
+                    <select name="pergunta7" id="p7">
+                        <option value="sql">SQL</option>
+                        <option value="css">CSS</option>
+                        <option value="java">JAVA</option>
+                    </select>
+                        
+                </form>
+            </section>
+            <!-- Oitava pergunta: Adicionar imagem-->
+            <section>
+                <h2>Pergunta 8: Qual nome da linguagem da imagem abaixo?.</h2>
+                <form>
+                    <figure>
+                        <img src="p-80-java.webp" alt="Caneca de Café">
+                    </figure>
+                    <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+                </form>
+            </section>
+            <!-- Tabela de respostas -->
+            <section>
+                <h2>Tabelas de respostas:</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Pontuação</th>
+                            <th>Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0-2</td>
+                            <td>Não desista!</td>
+                        </tr>
+                        <tr>
+                            <td>3-4</td>
+                            <td>Tem que melhorar um pouco...</td>           
+                        </tr>
+                        <tr>
+                            <td>5-6</td>
+                            <td>Voce foi bem!</td>           
+                        </tr>
+                        <tr>
+                            <td>7-8</td>
+                            <td>Voce foi muito bem, parabens!</td>           
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Boa sorte, tenho certeza que voce vai conseguir uma boa pontuação!</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <!-- Listas de respostas -->
+            <section>
+                <h2>Verifique as respostas.</h2>
+                <details> 
+                    <summary>Clique para ver as respostas</summary>
+                    <ol>
+                        <li>Html</li>
+                        <li>Hiper Text Markable Language</li>
+                        <li>123sa</li>
+                        <li>25/02/2026</li>
+                        <li>Html, JavaScript</li>
+                        <li>Imagem .html</li>
+                        <li>SQL</li>
+                        <li>Java</li>
+                    </ol>
+                </details>
+            </section>
+            <!-- Formulario -->
+            <section>
+                <h2>Nos de o feedback:</h2>
+                <fieldset>
+                    <legend>Informaçoes de contato</legend>
+                        <form>
+                            <label class="feedback" for="name">Digite seu nome:</label><br>
+                            <input class="feedback" type="text" id="nome" name="nome" placeholder="Nome."><br>
+                            <label class="feedback" for="email">Digite seu email:</label><br>
+                            <input class="feedback" type="email" id="email" name="email" placeholder="Email."><br>
+                            <label class="feedback" for="comments">Digite um comentario:</label><br>
+                            <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Deixe seu comentario"></textarea><br>
+                            <button>Envie as Informaçoes</button>
+                        </form>
+                </fieldset>
+            </section>
+        </main>
+        <footer>
+            <p>&copy Sistema de perguntas. Todos os direitos reservados.</p>
+            <p>Conheça nossos outros trabalhos. <a href="teste.html" target="_blank">Clique aqui!</a></p>
+        </footer>
+    </body>
+</html>
