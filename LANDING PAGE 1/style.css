@@ -8,7 +8,9 @@
     text-decoration: none;
 }
 
-body{
+html, body{
+    height: 100%;
+    margin:0;
     font-size: 100%;
     color: white;
     background: linear-gradient(135deg, #5865F2, #8A2BE2);
@@ -17,9 +19,13 @@ body{
     flex-direction: column;
 }
 
+.conteudo{
+    flex:1;
+}
+
 .cabecalho-img{
     height: 60px;
-    margin:10px;
+    margin: 10px;
 }
 
 .menu-nav{
@@ -34,18 +40,22 @@ body{
 
 .link-nav{
     color: white;
+}
 
+.link-nav:hover{
+    opacity: 0.8;
 }
 
 .cabecalho{
     display: flex;
     text-decoration: none;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 300px;
+    padding: 0 40px;
 }
 
 main{
+    flex: 1;
     border-top: 0.4px solid white;
 }
 
@@ -56,13 +66,13 @@ main{
 }
 
 .titulo-prim{
-    font-family: 'Righteous' cursive;
+    font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 50px;
 }
 
 .texto-prim{
-    font-family: 'sarala' sans-serif;
+    font-family: 'sarala', sans-serif;
     font-weight: 400;
     font-size: 20px;
 }
@@ -87,7 +97,7 @@ main{
 
 .botao-prim:hover{
     background-color: rgba(236,214,196,0.53);
-    transition-duration: 0.4s;
+    transition: all 0.4s ease;
 }
 
 .botao-prim span{
@@ -106,8 +116,9 @@ main{
     flex-direction: column;
     align-items: center;
     gap:15px;
-    margin-bottom: 15px;
-    margin-top:40px;
+    padding: 1rem;
+    margin-top:5vh;
+    margin-bottom: 5vh;
 }
 
 .titulo-sec{
@@ -119,7 +130,7 @@ main{
 }
 
 .texto-sec{
-    font-family: 'sarala' sans-serif;
+    font-family: 'Sarala' sans-serif;
     font-weight: 400;
     font-size: 15PX;  
 }
@@ -128,10 +139,9 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    padding: 20px;
+    padding: 1rem;
     border-top: 0.4px solid white;
+    width: 100%;
 }
 
 .clique{
